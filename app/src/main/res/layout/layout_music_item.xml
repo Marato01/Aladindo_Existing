@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/pd_lg"
+    android:paddingRight="@dimen/pd_lg">
+
+    <CheckBox
+        android:id="@+id/cb_select_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/tv_music_item"
+        android:layout_width="0dp"
+        android:layout_height="?listPreferredItemHeight"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:textSize="@dimen/ts_common" />
+
+    <TextView
+        android:id="@+id/tv_try_listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/text_try_listen"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/ts_common"
+        android:visibility="gone" />
+
+    <com.github.abdularis.buttonprogress.DownloadButtonProgress
+        android:id="@+id/progress"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        app:cancelIconHeight="0dp"
+        app:cancelIconWidth="0dp"
+        app:determinateBackgroundDrawable="@android:color/transparent"
+        app:finishBackgroundDrawable="@android:color/transparent"
+        app:finishIconDrawable="@drawable/icon_download_finish"
+        app:finishIconHeight="48dp"
+        app:finishIconWidth="48dp"
+        app:idleBackgroundDrawable="@android:color/transparent"
+        app:idleIconDrawable="@drawable/ic_download"
+        app:idleIconHeight="48dp"
+        app:idleIconWidth="48dp"
+        app:maxProgress="100"
+        app:progressDeterminateColor="@android:color/holo_green_light"
+        app:progressWidth="6dp"
+        app:state="IDLE" />
+
+</LinearLayout>

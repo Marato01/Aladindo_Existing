@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="40dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="40dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tv_miss_position_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text_miss_position"
+        android:textColor="#707070"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:src="@drawable/icon_miss_position" />
+
+    <Button
+        android:id="@+id/btn_relocate"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@color/warning"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/text_relocate"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B5A76"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="end|center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="@dimen/pd_sm"
+        android:paddingRight="30dp"
+        android:paddingBottom="@dimen/pd_sm">
+
+        <TextView
+            android:id="@+id/tv_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mr_md"
+            android:drawableStart="@drawable/icon_battery"
+            android:drawablePadding="@dimen/pd_xs"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mr_md" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mr_xs"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_center_content"
+        android:layout_width="800dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_task_pause_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_robot_pause" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_task_mode_in_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_task_mode"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lineSpacingMultiplier="0.9"
+                android:maxWidth="500dp"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/pd_lg"
+                android:paddingTop="@dimen/pd_md"
+                android:paddingRight="@dimen/pd_lg"
+                android:paddingBottom="@dimen/pd_md"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_task_state_in_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_lg"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="0.9"
+                android:maxWidth="500dp"
+                android:maxLines="2"
+                android:text="@string/text_task_is_pause"
+                android:textAlignment="center"
+                android:textColor="#464646"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_count_down_in_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_lg"
+                android:gravity="center"
+                android:textColor="#464646"
+                android:textSize="@dimen/ts_common" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:minWidth="600dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_cancel_task_in_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_cancel_task"
+                android:drawablePadding="@dimen/pd_md"
+                android:gravity="center"
+                android:text="@string/text_cancel_recycle"
+                android:textColor="#efefef"
+                android:textSize="@dimen/ts_lg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pick_meal_in_advance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_pick_meal_in_advance_in_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_pick_meal_in_advance"
+                android:drawablePadding="@dimen/pd_md"
+                android:gravity="center"
+                android:text="@string/text_pick_meal_in_advance"
+                android:textColor="#efefef"
+                android:textSize="@dimen/ts_lg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_continue_task_in_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_continue_task"
+                android:drawablePadding="@dimen/pd_md"
+                android:gravity="center"
+                android:text="@string/text_continue_task"
+                android:textColor="#efefef"
+                android:textSize="@dimen/ts_lg" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_return"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_return_in_pause_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_return"
+                android:drawablePadding="@dimen/pd_md"
+                android:gravity="center"
+                android:text="@string/text_return"
+                android:textColor="#efefef"
+                android:textSize="@dimen/ts_lg" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

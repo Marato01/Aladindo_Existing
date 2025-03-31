@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layers"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="-45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="40dp"
+        android:paddingEnd="@dimen/pd_xs">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_layer_one"
+                android:layout_width="150dp"
+                android:layout_height="54dp"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="@dimen/ts_md" />
+
+            <ImageView
+                android:id="@+id/iv_birthday_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_layer_one"
+                android:layout_marginStart="-22dp"
+                android:layout_marginBottom="-18dp"
+                android:layout_toEndOf="@id/tv_layer_one"
+                android:src="@drawable/icon_crown"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_cancel_selected_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/tv_layer_one"
+                android:src="@drawable/icon_cancel_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="40dp"
+        android:paddingEnd="@dimen/pd_xs">
+
+        <TextView
+            android:id="@+id/tv_layer_two"
+            android:layout_width="150dp"
+            android:layout_height="54dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/ts_md" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_selected_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/icon_cancel_select"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="40dp"
+        android:paddingEnd="@dimen/pd_xs">
+
+        <TextView
+            android:id="@+id/tv_layer_three"
+            android:layout_width="150dp"
+            android:layout_height="54dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/ts_md" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_selected_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/icon_cancel_select"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

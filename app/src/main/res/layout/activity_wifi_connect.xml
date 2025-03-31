@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0066aa"
+    android:orientation="vertical"
+    tools:context=".activities.WiFiConnectActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_operation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mr_md"
+        android:layout_marginEnd="@dimen/mr_md"
+        android:paddingStart="@dimen/pd_xs"
+        android:paddingTop="@dimen/pd_sm"
+        android:paddingEnd="@dimen/pd_md"
+        android:paddingBottom="@dimen/pd_sm">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:drawableStart="@drawable/icon_back"
+            android:padding="@dimen/pd_sm"
+            android:text="@string/text_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_common" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_android_wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="300dp"
+                android:singleLine="true"
+                android:textColor="#efefef"
+                android:textSize="@dimen/ts_lg" />
+
+            <TextView
+                android:id="@+id/tv_ros_wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mr_lg"
+                android:ellipsize="end"
+                android:maxWidth="300dp"
+                android:singleLine="true"
+                android:textColor="#efefef"
+                android:textSize="@dimen/ts_lg" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_operation_bar"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:paddingTop="@dimen/pd_sm"
+        android:paddingEnd="15dp"
+        android:paddingBottom="@dimen/pd_sm">
+
+        <TextView
+            android:id="@+id/tv_wifi_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textColor="#efefef"
+            android:textSize="@dimen/ts_common" />
+
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/switch_wifi_status"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            app:kswBackColor="#4400ff00"
+            app:kswTextAdjust="-2dp"
+            app:kswTextExtra="8dp"
+            app:kswTextOff="ON"
+            app:kswTextOn="OFF"
+            app:kswThumbColor="@android:color/white"
+            app:kswThumbHeight="30dp"
+            app:kswThumbWidth="35dp" />
+
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_status_bar"
+        android:layout_marginStart="@dimen/mr_md"
+        android:layout_marginEnd="@dimen/mr_md">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

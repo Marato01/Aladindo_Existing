@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.MapBuildingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/web_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_operation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingTop="@dimen/pd_sm"
+                android:paddingRight="40dp"
+                android:paddingBottom="@dimen/pd_sm"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_restart_construct_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_md"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_md"
+                    android:text="@string/text_restart_build_map"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+
+                <TextView
+                    android:id="@+id/tv_exit_construct_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_exit_build_map"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_mark_delivery_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_mark_delivery_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_mark_charging_pile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_mark_charging_pile"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_mark_product_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_mark_product_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_mark_recycling_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_mark_recycling_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_save_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_save_map"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_start_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_start_path"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_switch_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_switch_network"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+
+                <TextView
+                    android:id="@+id/tv_back_to_main_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_back_to_main_page"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_common_button_pressed"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:paddingTop="@dimen/pd_sm"
+                    android:paddingRight="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_sm"
+                    android:text="@string/text_exit_deploy"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/mr_sm"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_host_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mr_sm"
+                    android:gravity="center"
+                    android:textColor="#aaa"
+                    android:textSize="@dimen/ts_md" />
+
+                <TextView
+                    android:id="@+id/tv_hostname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#aaa"
+                    android:textSize="@dimen/ts_md" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff18284F"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_back"
+            android:drawablePadding="@dimen/pd_sm"
+            android:paddingLeft="@dimen/pd_lg"
+            android:paddingTop="@dimen/pd_md"
+            android:paddingRight="@dimen/pd_lg"
+            android:paddingBottom="@dimen/pd_md"
+            android:text="@string/text_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_common" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_setting_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/pd_lg"
+            android:paddingTop="@dimen/pd_md"
+            android:paddingRight="@dimen/pd_lg">
+
+
+            <TextView
+                android:id="@+id/tv_basic_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:drawableStart="@drawable/icon_basic_setting"
+                android:drawablePadding="@dimen/pd_md"
+                android:paddingStart="@dimen/pd_lg"
+                android:paddingTop="@dimen/pd_md"
+                android:paddingEnd="@dimen/pd_lg"
+                android:paddingBottom="@dimen/pd_md"
+                android:singleLine="true"
+                android:text="@string/text_basic_setting"
+                android:textColor="#777"
+                android:textSize="@dimen/ts_common" />
+
+            <TextView
+                android:id="@+id/tv_language_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_md"
+                android:background="@drawable/bg_setting_item"
+                android:drawableStart="@drawable/icon_language_setting"
+                android:drawablePadding="@dimen/pd_md"
+                android:paddingStart="@dimen/pd_lg"
+                android:paddingTop="@dimen/pd_md"
+                android:paddingEnd="@dimen/pd_lg"
+                android:paddingBottom="@dimen/pd_md"
+                android:singleLine="true"
+                android:text="@string/text_language_setting"
+                android:textColor="#777"
+                android:textSize="@dimen/ts_common" />
+
+            <TextView
+                android:id="@+id/tv_wifi_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_md"
+                android:background="@drawable/bg_setting_item"
+                android:drawableStart="@drawable/icon_network_setting"
+                android:drawablePadding="@dimen/pd_md"
+                android:paddingStart="@dimen/pd_lg"
+                android:paddingTop="@dimen/pd_md"
+                android:paddingEnd="@dimen/pd_lg"
+                android:paddingBottom="@dimen/pd_md"
+                android:singleLine="true"
+                android:text="@string/text_wifi_setting"
+                android:textColor="#777"
+                android:textSize="@dimen/ts_common" />
+
+            <TextView
+                android:id="@+id/tv_delivery_mode_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_md"
+                android:background="@drawable/bg_setting_item"
+                android:drawableStart="@drawable/icon_delivery_mode_setting"
+                android:drawablePadding="@dimen/pd_md"
+                android:paddingStart="@dimen/pd_lg"
+                android:paddingTop="@dimen/pd_md"
+                android:paddingEnd="@dimen/pd_lg"
+                android:paddingBottom="@dimen/pd_md"
+                android:singleLine="true"
+                android:text="@string/text_delivery_mode"
+                android:textColor="#777"
+                android:textSize="@dimen/ts_common" />
+
+            <TextView
+                android:id="@+id/tv_version_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_md"
+                android:background="@drawable/bg_setting_item"
+                android:drawableStart="@drawable/icon_version_setting"
+                android:drawablePadding="@dimen/pd_md"
+                android:paddingStart="@dimen/pd_lg"
+                android:paddingTop="@dimen/pd_md"
+                android:paddingEnd="@dimen/pd_lg"
+                android:paddingBottom="@dimen/pd_md"
+                android:singleLine="true"
+                android:text="@string/text_version_setting"
+                android:textColor="#777"
+                android:textSize="@dimen/ts_common" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/mr_md"
+            android:layout_marginBottom="@dimen/mr_md"
+            android:background="#88cdcdcd" />
+
+        <FrameLayout
+            android:id="@+id/fl_setting_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

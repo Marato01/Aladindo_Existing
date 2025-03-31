@@ -1,0 +1,109 @@
+import java.text.SimpleDateFormat
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.reeman.delige"
+        minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 30
+        versionCode 307
+        versionName "3.0.3.331215"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField 'String', 'APP_BUGLY_ID', '"0a937f5764"'
+        buildConfigField 'String', 'APP_LOG_DIR', '"deligo"'
+        buildConfigField 'Boolean', 'APP_FORCE_USE_ZH', 'false'
+
+        /*ndk {
+            abiFilters 'armeabi', 'armeabi-v7a'
+        }*/
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
+        }
+    }
+
+    /*repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }*/
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                outputFileName = "deligo_${defaultConfig.applicationId}_v${defaultConfig.versionName}-${getCurrentTime()}.apk"
+            }
+    }
+
+}
+
+
+def static getCurrentTime() {
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmm");
+    Date curDate = new Date(System.currentTimeMillis());
+    return formatter.format(curDate);
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    implementation 'com.tencent.bugly:nativecrashreport:3.9.2'
+    implementation 'com.tencent.bugly:crashreport_upgrade:1.6.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.12'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'com.kyleduo.switchbutton:library:2.1.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.sephiroth74:android-target-tooltip:2.0.4'
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+    implementation 'com.microsoft.cognitiveservices.speech:client-sdk:1.19.0'
+    implementation 'com.github.abdularis:androidbuttonprogress:1.1.0'
+    implementation "androidx.room:room-rxjava3:2.3.0"
+    implementation "androidx.room:room-runtime:2.3.0"
+    annotationProcessor "androidx.room:room-compiler:2.3.0"
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "org.greenrobot:eventbus:3.3.1"
+
+}

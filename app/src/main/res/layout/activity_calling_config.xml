@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.CallingConfigActivity">
+
+    <EditText
+        android:id="@+id/et_key_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_please_input_key_number"
+        android:inputType="textNoSuggestions"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minWidth="400dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_bind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_config_button"
+            android:onClick="startBind"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/text_bind"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_delete_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_config_button"
+            android:onClick="deleteAll"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/text_delete_all"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_config_button"
+            android:onClick="exit"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/text_exit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

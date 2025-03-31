@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/pd_sm"
+        android:paddingBottom="@dimen/pd_xs"
+        android:text="@string/text_select_delivery_mode"
+        android:textColor="#707070"
+        android:textSize="32sp" />
+
+
+    <GridLayout
+        android:id="@+id/gl_delivery_modes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:tag="1"
+            android:text="@string/text_delivery_food_mode"
+            android:textColor="#707070"
+            android:textSize="@dimen/ts_lg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:tag="2"
+            android:text="@string/text_cruise_mode"
+            android:textColor="#707070"
+            android:textSize="@dimen/ts_lg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:tag="5"
+            android:text="@string/text_recycle_mode"
+            android:textColor="#707070"
+            android:textSize="@dimen/ts_lg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:tag="4"
+            android:text="@string/text_birthday_mode"
+            android:textColor="#707070"
+            android:textSize="@dimen/ts_lg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:tag="6"
+            android:text="@string/text_multi_delivery_mode"
+            android:textColor="#707070"
+            android:textSize="@dimen/ts_lg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:tag="3"
+            android:text="@string/text_recycle_mode"
+            android:textColor="#707070"
+            android:textSize="@dimen/ts_lg"
+            android:visibility="gone" />
+
+    </GridLayout>
+
+</LinearLayout>

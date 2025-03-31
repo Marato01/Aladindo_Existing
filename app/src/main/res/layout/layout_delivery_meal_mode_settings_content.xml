@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_expandable_item"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/pd_md"
+    android:paddingRight="@dimen/pd_md">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_delivery_food_speed_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/pd_xs"
+            android:paddingBottom="@dimen/pd_xs">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_running_speed"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ts_lg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_sm"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/pd_sm"
+                android:paddingBottom="@dimen/pd_sm">
+
+                <ImageButton
+                    android:id="@+id/ib_decrease_delivery_mode_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/pd_lg"
+                    android:src="@drawable/icon_subtract" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/isb_adjust_delivery_mode_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:isb_indicator_color="#66CCFF"
+                    app:isb_indicator_text_color="@android:color/white"
+                    app:isb_indicator_text_size="18sp"
+                    app:isb_max="0.8"
+                    app:isb_min="0.3"
+                    app:isb_only_thumb_draggable="false"
+                    app:isb_progress="0.4"
+                    app:isb_seek_smoothly="true"
+                    app:isb_show_indicator="none"
+                    app:isb_show_tick_texts="true"
+                    app:isb_thumb_color="#66CCFF"
+                    app:isb_thumb_size="24dp"
+                    app:isb_thumb_text_color="#66CCFF"
+                    app:isb_tick_texts_array="@array/runningSpeed"
+                    app:isb_tick_texts_color="#66CCFF"
+                    app:isb_tick_texts_size="@dimen/ts_sm"
+                    app:isb_ticks_count="6"
+                    app:isb_track_background_color="#eeeeee"
+                    app:isb_track_background_size="4dp"
+                    app:isb_track_progress_color="#66CCFF"
+                    app:isb_track_progress_size="4dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_increase_delivery_mode_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/pd_lg"
+                    android:src="@drawable/icon_add" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_delivery_food_duration_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_delivery_food_speed_setting"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/pd_xs"
+            android:paddingBottom="@dimen/pd_xs">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_waiting_for_picking_meal_duration_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ts_lg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_sm"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/pd_sm"
+                android:paddingBottom="@dimen/pd_sm">
+
+                <ImageButton
+                    android:id="@+id/ib_decrease_delivery_mode_pause_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/pd_lg"
+                    android:src="@drawable/icon_subtract" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/isb_adjust_delivery_mode_pause_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:isb_indicator_color="#66CCFF"
+                    app:isb_indicator_text_color="@android:color/white"
+                    app:isb_indicator_text_size="18sp"
+                    app:isb_max="10800"
+                    app:isb_min="10"
+                    app:isb_only_thumb_draggable="false"
+                    app:isb_progress="30"
+                    app:isb_seek_smoothly="true"
+                    app:isb_show_indicator="rounded_rectangle"
+                    app:isb_show_thumb_text="true"
+                    app:isb_thumb_color="#66CCFF"
+                    app:isb_thumb_size="24dp"
+                    app:isb_thumb_text_color="#66CCFF"
+                    app:isb_track_background_color="#eeeeee"
+                    app:isb_track_background_size="4dp"
+                    app:isb_track_progress_color="#66CCFF"
+                    app:isb_track_progress_size="4dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_increase_delivery_mode_pause_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/pd_lg"
+                    android:src="@drawable/icon_add" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_custom_delivery_mode_delivery_arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_delivery_food_duration_setting"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/pd_xs"
+            android:paddingBottom="@dimen/pd_xs">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_prompt_for_delivery_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_lg" />
+
+
+                <ImageButton
+                    android:id="@+id/ib_add_custom_prompt_for_delivery_mode_delivery_arrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/pd_md"
+                    android:src="@drawable/icon_add_item" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_sm"
+                android:background="@drawable/bg_setting_item"
+                android:clipChildren="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/pd_sm"
+                android:paddingBottom="@dimen/pd_sm">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/pd_xs"
+                    android:paddingBottom="@dimen/pd_xs">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_custom_prompt_for_delivery_arrival"
+                        android:textSize="@dimen/ts_lg" />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sw_enable_custom_prompt_for_delivery_mode_delivery_arrival"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-10dp"
+                        android:checked="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/ts_md"
+                        app:kswBackColor="@android:color/holo_blue_dark"
+                        app:kswTextAdjust="-2dp"
+                        app:kswTextExtra="8dp"
+                        app:kswTextOff="ON"
+                        app:kswTextOn="OFF"
+                        app:kswThumbColor="@android:color/white"
+                        app:kswThumbHeight="30dp"
+                        app:kswThumbWidth="35dp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_custom_prompt_for_delivery_mode_delivery_arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_delivery_mode_music_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_custom_delivery_mode_delivery_arrival"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/pd_sm"
+            android:paddingBottom="@dimen/pd_sm">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_background_music_choose"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ts_lg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mr_sm"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/pd_sm"
+                android:paddingBottom="@dimen/pd_sm">
+
+                <TextView
+                    android:id="@+id/tv_delivery_mode_background_music"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mr_md"
+                    android:layout_marginEnd="@dimen/mr_md"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#777"
+                    android:textSize="@dimen/ts_lg" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sw_delivery_mode_enable_background_music"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_md"
+                    app:kswBackColor="@android:color/holo_blue_dark"
+                    app:kswTextAdjust="-2dp"
+                    app:kswTextExtra="8dp"
+                    app:kswTextOff="ON"
+                    app:kswTextOn="OFF"
+                    app:kswThumbColor="@android:color/white"
+                    app:kswThumbHeight="30dp"
+                    app:kswThumbWidth="35dp" />
+
+                <Button
+                    android:id="@+id/btn_choose_delivery_mode_background_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/mr_lg"
+                    android:background="@drawable/selector_common_button"
+                    android:text="@string/text_choose"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ts_lg" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

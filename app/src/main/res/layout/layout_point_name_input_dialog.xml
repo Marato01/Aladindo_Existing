@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:padding="@dimen/pd_md">
+
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_point_name_input"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_point_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/text_input_point_name"
+            android:inputType="none"
+            android:paddingLeft="@dimen/pd_sm"
+            android:textSize="@dimen/ts_lg" />
+
+        <!--        <ImageButton
+                    android:id="@+id/ib_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingStart="@dimen/pd_xl"
+                    android:paddingTop="@dimen/pd_md"
+                    android:paddingEnd="@dimen/pd_md"
+                    android:paddingBottom="@dimen/pd_md"
+                    android:src="@drawable/icon_manual_input"
+                    android:text="@string/text_confirm" />-->
+
+        <ImageButton
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingStart="@dimen/pd_xl"
+            android:paddingTop="@dimen/pd_md"
+            android:paddingEnd="@dimen/pd_md"
+            android:paddingBottom="@dimen/pd_md"
+            android:src="@drawable/ic_backspace"
+            android:text="@string/text_confirm" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gl_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_input"
+        android:layout_marginTop="@dimen/mr_md"
+        android:columnCount="3"
+        android:rowCount="3" />
+</RelativeLayout>

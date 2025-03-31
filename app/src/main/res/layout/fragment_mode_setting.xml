@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/pd_md"
+        android:paddingTop="@dimen/pd_md"
+        android:paddingRight="@dimen/pd_md">
+
+        <com.reeman.delige.widgets.ExpandableLayout
+            android:id="@+id/el_delivery_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mr_md"
+            expandable:el_contentLayout="@layout/layout_delivery_meal_mode_settings_content"
+            expandable:el_headerLayout="@layout/layout_delivery_meal_mode_settings_header" />
+
+        <com.reeman.delige.widgets.ExpandableLayout
+            android:id="@+id/el_cruise_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mr_md"
+            expandable:el_contentLayout="@layout/layout_cruise_mode_settings_content"
+            expandable:el_headerLayout="@layout/layout_cruise_mode_settings_header" />
+
+        <com.reeman.delige.widgets.ExpandableLayout
+            android:id="@+id/el_recycle_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mr_md"
+            expandable:el_contentLayout="@layout/layout_recycle_mode_settings_content"
+            expandable:el_headerLayout="@layout/layout_recycle_mode_settings_header" />
+
+        <com.reeman.delige.widgets.ExpandableLayout
+            android:id="@+id/el_birthday_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mr_md"
+            expandable:el_contentLayout="@layout/layout_birthday_mode_settings_content"
+            expandable:el_headerLayout="@layout/layout_birthday_mode_settings_header" />
+
+        <com.reeman.delige.widgets.ExpandableLayout
+            android:id="@+id/el_multi_delivery_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandable:el_contentLayout="@layout/layout_multi_delivery_mode_settings_content"
+            expandable:el_headerLayout="@layout/layout_multi_delivery_mode_settings_header" />
+    </LinearLayout>
+
+</ScrollView>

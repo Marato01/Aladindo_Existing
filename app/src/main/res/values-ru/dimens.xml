@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ts_common">22sp</dimen>
+    <dimen name="ts_xs">10sp</dimen>
+    <dimen name="ts_md">15sp</dimen>
+    <dimen name="ts_sm">14sp</dimen>
+    <dimen name="ts_lg">20sp</dimen>
+    <dimen name="ts_xl">24sp</dimen>
+
+    <dimen name="mr_xs">5dp</dimen>
+    <dimen name="mr_sm">10dp</dimen>
+    <dimen name="mr_md">15dp</dimen>
+    <dimen name="mr_lg">20dp</dimen>
+    <dimen name="mr_xl">25dp</dimen>
+
+    <dimen name="pd_xs">5dp</dimen>
+    <dimen name="pd_sm">7dp</dimen>
+    <dimen name="pd_md">10dp</dimen>
+    <dimen name="pd_lg">18dp</dimen>
+    <dimen name="pd_xl">25dp</dimen>
+
+</resources>
