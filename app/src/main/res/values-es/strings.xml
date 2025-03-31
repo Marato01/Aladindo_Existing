@@ -153,7 +153,7 @@
     <string name="text_exit_build_map">ចាកចេញពីរបៀបបង្កើតផែនទី</string>
     <string name="text_exit_charge_page">ចាកចេញពីអេក្រង់ប៉ុណ្ណោះ</string>
     <string name="text_exit_config_mode">ចាកចេញពីរបៀបកំណត់រចនា</string>
-    <string name="text_exit_deploy">ចាកចេញពីការបញ្ជូន</string>
+    <string name="text_exit_deploy">ចាក់ចេញពីកន្លែងកែប្រែផែនទី</string>
     <string name="text_exit_on_next_tap">ចុចម្ដងទៀតដើម្បីចាកចេញពីកម្មវិធី។</string>
     <string name="text_exit_only">ចាកចេញតែប៉ុណ្ណោះ</string>
     <string name="text_exit_transmission">ចាកចេញពីរបៀបបញ្ជូនថ្លាក</string>
@@ -191,11 +191,11 @@
     <string name="text_log_upload">ផ្ទុកឡើងកំណត់ហេតុ</string>
     <string name="text_login">ភ្ជាប់</string>
     <string name="text_low_power_setting">ការកំំណត់កម្រិតទៀបបំផុតនៃថ្មរបស់រ៉ូប៉ូតសម្រាប់រ៉ូប៉ូតទៅកន្លែងបញ្ចូលថ្មដោយខ្លួនឯង</string>
-    <string name="text_mark_charging_pile">កំណត់ជាស្ថានីយ៍សាកថ្ម</string>
-    <string name="text_mark_delivery_point">បន្ថែមចំណុចដឹកជញ្ជូន</string>
+    <string name="text_mark_charging_pile">ការដាក់ទីតាំងសម្រាប់បញ្ចូលថ្ម</string>
+    <string name="text_mark_delivery_point">ការដាក់ទីតាំងសម្រាប់ការដឹកជញ្ជូន</string>
     <string name="text_mark_point">កំណត់ចំណុចគោលដៅ</string>
-    <string name="text_mark_product_point">កំណត់ជាកន្លែងផលិត</string>
-    <string name="text_mark_recycling_point">ទីតាំងចំណុចកែកសំណល់</string>
+    <string name="text_mark_product_point">ការដាក់ទីតាំងសម្រាប់ទទួលអាហារ និងភេសជ្ជះ</string>
+    <string name="text_mark_recycling_point">ការដាក់ទីតាំងសម្រាប់ប្រមូលកាកសំណល់ដែលប្រើរួច</string>
     <string name="text_miss_position">ទីតាំងរបស់រ៉ូបូតបានបាត់។ សូមផ្លាស់ទីរ៉ូបូតទៅកន្លែងសាកថ្មហើយចុចប៊ូតុងកំណត់ទីតាំងឡើងវិញខាងក្រោម</string>
     <string name="text_more_setting">កន្លែងកំណត់កំណែទម្រង់មុខងារ</string>
     <string name="text_multi_delivery_mode">មុខងារចែកកាដូ</string>
@@ -289,7 +289,7 @@
     <string name="text_setting_password">ការកំំណត់មុខងារដាក់លេខកូតសម្ងាត់សម្រាប់អ្នកប្រើប្រាស់</string>
     <string name="text_show_password">បង្ហាញពាក្យសម្ងាត់</string>
     <string name="text_start">ធ្វើការដឹកជញ្ជូនឥឡូវនេះ !</string>
-    <string name="text_start_path">បង្កើតផ្លូវ</string>
+    <string name="text_start_path">ការបង្កើតផ្លូវសម្រាប់រ៉ូប៉ូតរត់</string>
     <string name="text_start_right_now">ចាប់ផ្តើមឥឡូវនេះ</string>
     <string name="text_stop_charge">ឈប់សាក</string>
     <string name="text_stop_send">ឈប់ផ្ញើ</string>
@@ -297,7 +297,7 @@
     <string name="text_switch_language">ប្តូរភាសា</string>
     <string name="text_switch_map">ការជ្រើសរើសផែនទីសម្រាប់ដំណើរការដឹកជញ្ជូន</string>
     <string name="text_switch_map_success">ការប្តូរផែនទីបានបញ្ចប់</string>
-    <string name="text_switch_network">ប្តូរបណ្តាញ</string>
+    <string name="text_switch_network">ការផ្តូរប្រព័ន្ធបញ្ជារភ្ជាប់</string>
     <string name="text_switch_to_constructing_map_mode">កំពុងប្តូរទៅរបៀបបង្កើតផែនទី សូមរង់ចាំ...</string>
     <string name="text_table_layers">ការកំណត់ចំនួនធ្នើរដែលអាចប្រើប្រាស់បានសម្រាប់ការដឹកជញ្ជូន</string>
     <string name="text_table_placement">ការកំណត់ចំនួនតុដែលអាចប្រើប្រាស់បានសម្រាប់ការដឹកជញ្ជូន</string>
